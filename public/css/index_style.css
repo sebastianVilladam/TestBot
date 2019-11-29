@@ -1,0 +1,19 @@
+/*
+Color codes:
+blue: 
+    #110dca
+    rgb(17, 13, 202)
+light blue: 
+    #5271ff
+yellow:  
+    #f8fe07
+    rgb(248, 254, 7)
+*/
+
+#header
+{
+    background-image: url("../img/index_header_bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

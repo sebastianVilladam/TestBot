@@ -1,0 +1,22 @@
+/*
+Color codes:
+blue: 
+    #110dca
+    rgb(17, 13, 202)
+light blue: 
+    #5271ff
+yellow:  
+    #f8fe07
+    rgb(248, 254, 7)
+*/
+
+*
+{
+    font-family: 'Mitr', sans-serif;
+}
+
+.navbar
+{
+    background: rgb(17,13,202);
+    background: linear-gradient(90deg, rgba(17,13,202,1) 48%, rgba(82,113,255,1) 100%);
+}
