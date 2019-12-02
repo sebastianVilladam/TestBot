@@ -8,6 +8,9 @@ light blue:
 yellow:  
     #f8fe07
     rgb(248, 254, 7)
+Grey:
+    #5c5c5c
+    rgb(92, 92, 92)
 */
 
 #header
@@ -16,4 +19,47 @@ yellow:
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 100px 0px;
+}
+
+#header-content
+{
+    padding: 0px 150px;
+}
+
+#header-content img
+{
+    transform: translateX(-30%);
+    transform: translateY(-20%);
+}
+
+#header-content h1
+{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#header-content p
+{    
+    font-size: 20px;
+}
+
+#red-section
+{
+    background: rgb(17,13,202);
+    padding: 80px 0px;
+}
+
+#extra-section
+{
+    background-image: url("../img/index_extra_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px 0px;
+}
+
+.btn1
+{
+    border-radius: 20px;
 }

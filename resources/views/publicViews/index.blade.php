@@ -5,10 +5,10 @@
 @section('content')
 <!--Page header-->
 <div id="header">
-    <div class="container-fluid">
+    <div class="container-fluid" id="header-content">
         <div class="row">
             <div class="col-md-8">
-                <h1>El mejor sistema de cuartionarios automáticos</h1>
+                <h1>El mejor sistema de cuestionarios automáticos</h1>
                 <p>
                     Simple de usar, con resultados inmediatos y lo mejor, puedes hacer tus exámenes,
                     cuestionarios, encuestas y pruebas en tiempo realpat
@@ -22,21 +22,21 @@
 </div>
 
 <!--redirect section-->
-<div>
+<div id="red-section">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col-md-6">
                 <h3>Conose los resultados de los últimos eventos</h3>
             </div>
             <div class="col-md-6">
-                <button class="btn btn-primary">Ver resultados</button>
+                <button class="btn btn-primary btn1">Ver resultados</button>
             </div>
         </div>
     </div>
 </div>
 
 <!--Extra info section-->
-<div>
+<div id="extra-section">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col-md-4">

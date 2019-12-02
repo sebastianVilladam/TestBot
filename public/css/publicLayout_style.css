@@ -20,3 +20,23 @@ yellow:
     background: rgb(17,13,202);
     background: linear-gradient(90deg, rgba(17,13,202,1) 48%, rgba(82,113,255,1) 100%);
 }
+
+#footer-container
+{
+    padding: 100px 0px 0px 0px;
+    background-color: #414141;
+    color: white;
+}
+
+#footer-container h1
+{
+    color: #110dca !important;
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+#footer-container p
+{
+    padding-bottom: 70px;
+}
+

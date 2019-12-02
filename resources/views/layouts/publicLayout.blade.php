@@ -13,28 +13,22 @@
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-light" data-toggle="affix">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light" data-toggle="affix">
         <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="#">TestBot</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse text-center" id="navbarsExample11">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Resultados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Login</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +40,7 @@
     </section>    
     
     <!--Footer-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="footer-container">
         <div class="text-center">
             <h1>TestBot</h1>
             <p>Desarrollado por la Universidad Autónoma de Manizales</p>
@@ -59,19 +53,13 @@
             <div class="collapse navbar-collapse text-center" id="navbarsExample11">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Resultados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Login</a>
                     </li>
                 </ul>
             </div>
