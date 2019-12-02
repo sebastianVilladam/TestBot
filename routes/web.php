@@ -14,6 +14,11 @@
 Route::get('/', function () {
     return view('publicViews.index');
 });
+
 Route::get('/results', function () {
     return view('publicViews.results');
+});
+
+Route::get('/test', function () {
+    return view('publicViews.testResults');
 });

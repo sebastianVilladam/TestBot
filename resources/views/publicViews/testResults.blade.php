@@ -1,9 +1,13 @@
 @extends('layouts.publicLayout')
 @section('links')
+<link rel="stylesheet" href="css/results_style.css">
 @stop
 @section('content')
 <div class="container-fluid text-center" id="title">
-    <h1>Resultados</h1>
+    <h1>Exámen 3 diseño algoritmos - 2019/03</h1>
+    <p>Fecha: 18/10/2019</p>
+    <p>Preguntas: 15</p>
+    <p>Promedio de notas: 4.0</p>
 </div>
 
 <!--Filter section-->
@@ -29,28 +33,33 @@
     <thead>
         <tr>
         <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Identificación</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tiempo de ejecución</th>
+        <th scope="col">Nota</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+            <th scope="row">1</th>
+            <td>123456789</td>
+            <td>Otto</td>
+            <td>00:45:12</td>
+            <td>3.9</td>
         </tr>
         <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
+            <th scope="row">2</th>
+            <td>4567897977</td>
+            <td>Thornton</td>
+            <td>00:36:58</td>
+            <td>4.2</td>
         </tr>
         <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
+            <th scope="row">3</th>
+            <td>147258369</td>
+            <td>Alex</td>
+            <td>01:15:01</td>
+            <td>4.0</td>
         </tr>
     </tbody>
     </table>

@@ -17,11 +17,11 @@ yellow:
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0px;
+    color: white;
 }
 
 #title h1
 {
-    color: white;
     font-size: 60px;
     font-weight: 900;
 }
