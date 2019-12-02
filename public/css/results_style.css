@@ -1,0 +1,42 @@
+/*
+Color codes:
+blue: 
+    #110dca
+    rgb(17, 13, 202)
+light blue: 
+    #5271ff
+yellow:  
+    #f8fe07
+    rgb(248, 254, 7)
+*/
+
+#title
+{
+    background-image: url("../img/results_img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+}
+
+#title h1
+{
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+#filter-section
+{
+    padding: 50px 0px 0px 0px;
+}
+
+#table-section
+{
+    padding: 100px 100px;
+}
+
+.btn1
+{
+    border-radius: 20px;
+}

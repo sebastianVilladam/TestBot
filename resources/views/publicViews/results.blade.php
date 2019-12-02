@@ -1,5 +1,6 @@
 @extends('layouts.publicLayout')
 @section('links')
+<link rel="stylesheet" href="css/results_style.css">
 @stop
 @section('content')
 <div class="container-fluid text-center" id="title">
@@ -21,7 +22,7 @@
                         <option>Ingeniería industrial</option>
                         <option>Ingeniería electrónica</option>
                         <option>Ingeniería de sistemas</option>
-                        <option>Artes culinarios y gastronomía</option>
+                        <option>Artes culinarias y gastronomía</option>
                         <option>Ingeniería biomédica</option>
                         <option>Atención pre hospitalaria</option>
                         <option>Análisis y programación de sistemas de información</option>
@@ -37,7 +38,7 @@
                         <option>Odontología</option>                        
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Filtrar</button>
+                <button type="submit" class="btn btn-primary mb-2 btn1">Filtrar</button>
             </form>
         </div>
         <div class="col-md-4"></div>
@@ -50,28 +51,33 @@
     <thead>
         <tr>
         <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Nombre de la prueba</th>
+        <th scope="col">Categoría</th>
+        <th scope="col">Fecha de ejecución</th>
+        <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
         <tr>
         <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <td>Prueba de Ing Mecanica</td>
+        <td>Ingeniería mecanica</td>
+        <td>17/09/2019</td>
+        <td><a href="#" class="btn btn-primary btn1">Ver</a></td>
         </tr>
         <tr>
         <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
+        <td>Matemáticas discretas 2019-03</td>
+        <td>Ingeniería de sistemas</td>
+        <td>23/11/2019</td>
+        <td><a href="#" class="btn btn-primary btn1">Ver</a></td>
         </tr>
         <tr>
         <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
+        <td>Dia grastronómico UAM 2019</td>
+        <td>Artes culinarias y gastronomía</td>
+        <td>15/10/2019</td>
+        <td><a href="#" class="btn btn-primary btn1">Ver</a></td>
         </tr>
     </tbody>
     </table>
