@@ -1,0 +1,53 @@
+/*
+Color codes:
+blue: 
+    #110dca
+    rgb(17, 13, 202)
+light blue: 
+    #5271ff
+yellow:  
+    #f8fe07
+    rgb(248, 254, 7)
+Grey:
+    #5c5c5c
+    rgb(92, 92, 92)
+*/
+
+#form-container
+{
+    background-image: url("../img/login_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 100px 0px;
+}
+
+#login-form
+{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#login-form h1
+{
+    margin-bottom: 50px;
+    color: black;
+}
+
+.form-group
+{
+    margin-bottom: 25px;
+}
+
+.form-gorup input
+{
+    height: 42px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+}
+
+#login-form a
+{
+    margin-top: 20px;
+}

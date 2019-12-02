@@ -22,3 +22,7 @@ Route::get('/results', function () {
 Route::get('/test', function () {
     return view('publicViews.testResults');
 });
+
+Route::get('/login', function () {
+    return view('publicViews.login');
+});

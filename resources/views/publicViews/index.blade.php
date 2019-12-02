@@ -29,7 +29,7 @@
                 <h3>Conose los resultados de los últimos eventos</h3>
             </div>
             <div class="col-md-6">
-                <button class="btn btn-primary btn1">Ver resultados</button>
+                <a class="btn btn-primary btn1" href="/results">Ver resultados</a>
             </div>
         </div>
     </div>
