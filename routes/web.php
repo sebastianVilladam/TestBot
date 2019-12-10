@@ -31,6 +31,5 @@ Route::get('/welcome', function () {
     return view('privateViews.welcome');
 });
 
-Route::get('/questions', function () {
-    return view('privateViews.questions');
-});
+/*Question CRUD routes */
+Route::get('/preguntas', 'QuestionController@index')->name('qList');
