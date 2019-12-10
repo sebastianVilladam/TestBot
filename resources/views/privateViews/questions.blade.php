@@ -16,25 +16,11 @@
                     <label for="inputState">Filtrar lista por: </label>
                     <select id="inputState" class="form-control">
                         <option selected>General</option>                        
-                        <option>Ciencia politica, gobierno y relaciones internacionales</option>
-                        <option>Administración de empresas</option>
-                        <option>Ingeniería industrial</option>
-                        <option>Ingeniería electrónica</option>
-                        <option>Ingeniería de sistemas</option>
-                        <option>Artes culinarias y gastronomía</option>
-                        <option>Ingeniería biomédica</option>
-                        <option>Atención pre hospitalaria</option>
-                        <option>Análisis y programación de sistemas de información</option>
-                        <option>Automatización industrial</option>
-                        <option>Mecánica industrial</option>
-                        <option>Diseño de modas</option>
-                        <option>Gestion de negocios</option>
-                        <option>Diseño industrial</option>
-                        <option>Ingeniería mecánica</option>
-                        <option>Negocios internacionales</option>
-                        <option>Economía</option>
-                        <option>Fisioterapia</option>
-                        <option>Odontología</option>                        
+                        <option>Matemáticas básicas</option>
+                        <option>Lógica de programación</option>
+                        <option>Procesos de investigación</option>
+                        <option>Cultura politica</option>                        
+                        <option>Calculo diferencial</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary mb-2 btn1">Filtrar</button>
