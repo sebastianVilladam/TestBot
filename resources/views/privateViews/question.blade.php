@@ -18,8 +18,8 @@
 
 <div id="btns">
     <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary">Atras</button>
-        <button type="button" class="btn btn-warning">Modificar</button>    
+        <a href="/preguntas" class="btn btn-primary">Atras</a>
+        <a href="{{ route('qSettings', $data->id) }}" class="btn btn-warning">Modificar</a>    
     </div>
 </div>
 @stop

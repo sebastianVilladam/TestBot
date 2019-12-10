@@ -35,3 +35,7 @@ Route::get('/welcome', function () {
 Route::get('/preguntas', 'QuestionController@index')->name('qList');
 
 Route::get('/pregunta/{id}', 'QuestionController@show')->name('question');
+
+Route::get('/datos de pregunta/{id}', 'QuestionController@edit')->name('qSettings');
+
+Route::put('/datos de pregunta/{id}', 'QuestionController@update')->name('qSettings');

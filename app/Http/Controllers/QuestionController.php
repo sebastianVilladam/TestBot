@@ -60,7 +60,8 @@ class QuestionController extends Controller
      */
     public function edit($id)
     {
-        //
+        $question = Question::findOrFail($id);
+        return view('privateViews.questionSettings', ['data' => $question]);
     }
 
     /**
@@ -72,7 +73,11 @@ class QuestionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $question = Question::findOrFail($id);
+        $input = $request->all();
+        $question->fill($input)->save();
+        
+        return view('privateViews.question', ['data' => $question]);
     }
 
     /**
