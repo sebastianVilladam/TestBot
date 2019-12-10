@@ -95,6 +95,12 @@ return [
             'driver' => 'monolog',
             'handler' => NullHandler::class,
         ],
+
+        'single' => [
+            'driver' => 'errorlog',
+            'path' => storage_path('logs/laravel.log'),
+            'level' => 'debug',
+            ],
     ],
 
 ];
