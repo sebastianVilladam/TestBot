@@ -33,3 +33,5 @@ Route::get('/welcome', function () {
 
 /*Question CRUD routes */
 Route::get('/preguntas', 'QuestionController@index')->name('qList');
+
+Route::get('/pregunta/{id}', 'QuestionController@show')->name('question');

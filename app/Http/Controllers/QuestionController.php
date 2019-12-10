@@ -48,7 +48,8 @@ class QuestionController extends Controller
      */
     public function show($id)
     {
-        //
+        $question = Question::findOrFail($id);
+        return view('privateViews.question', ['data' => $question]);
     }
 
     /**
