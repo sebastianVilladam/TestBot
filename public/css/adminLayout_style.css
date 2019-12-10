@@ -55,11 +55,16 @@ Grey:
     margin-left: 50px;
 }
 
+#mySidenav
+{
+    width: 250px;
+}
+
 /* Style page content */
 #main 
 {
     transition: margin-left .5s;
-    padding: 20px;
+    margin-left: 250px;
 }
 
 @media screen and (max-height: 450px) 

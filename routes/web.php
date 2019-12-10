@@ -26,3 +26,7 @@ Route::get('/test', function () {
 Route::get('/login', function () {
     return view('publicViews.login');
 });
+
+Route::get('/welcome', function () {
+    return view('privateViews.welcome');
+});

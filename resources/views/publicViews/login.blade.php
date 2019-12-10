@@ -16,7 +16,7 @@
                     <div class="form-group">
                         <input type="password" class="form-control" name="" id="" placeholder="Contraseña">
                     </div>
-                    <a href="private/adminHome.html" class="btn btn-primary">Entrar</a>
+                    <a href="/welcome" class="btn btn-primary">Entrar</a>
                     <br>
                     <a href="">Olvidó su usuario/contraseña?</a>
                 </form>
