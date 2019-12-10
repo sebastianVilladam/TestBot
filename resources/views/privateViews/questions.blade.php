@@ -7,7 +7,9 @@
 <!--Filter section-->
 <div id="filter-section">
     <div class="row" id="filter-content">
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <a href="/registrar pregunta" class="btn btn-primary">Regsitrar pregunta</a>
+        </div>
         <div class="col-md-4">
             <form class="form">             
                 <div class="form-group col-md-4">
@@ -61,7 +63,11 @@
                     <td>{{$question->body}}</td>
                     <td>{{$question->subject_id}}</td>
                     <td><a class="btn btn-primary btn1" href="{{ route('question', $question->id) }}">Ver</a></td>
-                    <td><a href="#" class="btn btn-danger">Eliminar</a></td>
+                    <td>
+                        {!! Form::open(['method' => 'DELETE','route' => ['veDelete', $vehicle->id]]) !!}
+                        {!! Form::submit('Eliminar', ['class' => 'btn btn-primary mb-2', 'id' => 'btn-delete']) !!}
+                        {!! Form::close() !!}
+                    </td>
                 </tr>
             @empty
                 <h3>No se encuentran preguntas registradas en el sistema</h3>

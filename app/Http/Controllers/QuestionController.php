@@ -26,7 +26,7 @@ class QuestionController extends Controller
      */
     public function create()
     {
-        //
+        return view('privateViews.questionRegister');
     }
 
     /**
@@ -37,7 +37,11 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Question::create($input);
+
+        $questions = Question::all();
+        return view('privateViews.questions', ['list' => $questions]);
     }
 
     /**

@@ -39,3 +39,7 @@ Route::get('/pregunta/{id}', 'QuestionController@show')->name('question');
 Route::get('/datos de pregunta/{id}', 'QuestionController@edit')->name('qSettings');
 
 Route::put('/datos de pregunta/{id}', 'QuestionController@update')->name('qSettings');
+
+Route::get('/registrar pregunta', 'QuestionController@create')->name('addQForm');
+
+Route::post('/registrar pregunta', 'QuestionController@store')->name('addQ');
