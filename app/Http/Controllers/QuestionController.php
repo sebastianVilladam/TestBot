@@ -92,6 +92,10 @@ class QuestionController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $question = Question::findOrFail($id);
+        $question->delete();
+
+        $questions = Question::all();
+        return view('privateViews.questions', ['list' => $questions]);
     }
 }

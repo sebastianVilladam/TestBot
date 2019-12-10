@@ -43,3 +43,5 @@ Route::put('/datos de pregunta/{id}', 'QuestionController@update')->name('qSetti
 Route::get('/registrar pregunta', 'QuestionController@create')->name('addQForm');
 
 Route::post('/registrar pregunta', 'QuestionController@store')->name('addQ');
+
+Route::delete('/pregunta/{id}', 'QuestionController@destroy')->name('qDelete');

@@ -63,16 +63,35 @@
                     <td>{{$question->body}}</td>
                     <td>{{$question->subject_id}}</td>
                     <td><a class="btn btn-primary btn1" href="{{ route('question', $question->id) }}">Ver</a></td>
-                    <td>
-                        {!! Form::open(['method' => 'DELETE','route' => ['veDelete', $vehicle->id]]) !!}
-                        {!! Form::submit('Eliminar', ['class' => 'btn btn-primary mb-2', 'id' => 'btn-delete']) !!}
-                        {!! Form::close() !!}
-                    </td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Eliminar</button></td>
                 </tr>
             @empty
                 <h3>No se encuentran preguntas registradas en el sistema</h3>
             @endforelse
         </tbody>
     </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar pregunta del sistema</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>¿Está seguro de quere elminar ésta pregunta?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        {!! Form::open(['method' => 'DELETE','route' => ['qDelete', $question->id]]) !!}
+        {!! Form::submit('Eliminar', ['class' => 'btn btn-danger mb-2', 'id' => 'btn-delete']) !!}
+        {!! Form::close() !!}
+      </div>
+    </div>
+  </div>
 </div>
 @stop
