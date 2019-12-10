@@ -1,0 +1,69 @@
+/*
+Color codes:
+blue: 
+    #110dca
+    rgb(17, 13, 202)
+light blue: 
+    #5271ff
+yellow:  
+    #f8fe07
+    rgb(248, 254, 7)
+Grey:
+    #5c5c5c
+    rgb(92, 92, 92)
+*/
+
+
+/* The side navigation menu style */
+.sidenav 
+{
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #ffdbdb; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+/* The navigation menu links */
+.sidenav a 
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #5c5c5c;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover 
+{
+    color: #ff9799;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content */
+#main 
+{
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) 
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
