@@ -1,0 +1,34 @@
+/*
+Color codes:
+blue: 
+    #110dca
+    rgb(17, 13, 202)
+light blue: 
+    #5271ff
+yellow:  
+    #f8fe07
+    rgb(248, 254, 7)
+Grey:
+    #5c5c5c
+    rgb(92, 92, 92)
+*/
+#titles
+{
+    padding: 200px 0;
+}
+
+#titles h1
+{
+    font-size: 100px;
+    font-weight: 900;
+    transform: translateY(50%);
+    margin-left: 100px;
+}
+
+#titles h2
+{
+    font-size: 50px;
+    color: #5c5c5c;
+    transform: translateY(50%);
+    margin-left: 100px;
+}
