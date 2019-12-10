@@ -30,3 +30,7 @@ Route::get('/login', function () {
 Route::get('/welcome', function () {
     return view('privateViews.welcome');
 });
+
+Route::get('/questions', function () {
+    return view('privateViews.questions');
+});

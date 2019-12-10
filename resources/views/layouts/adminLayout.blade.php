@@ -16,7 +16,7 @@
     <div id="mySidenav" class="sidenav">        
         <a href="viewAnimals.html">Administradores</a>
         <a href="upload.html">Usuarios</a>
-        <a href="viewAnimals.html">Preguntas</a>
+        <a href="/questions">Preguntas</a>
         <a href="viewAnimals.html">Tiempos</a>
         <a href="/login">Salir</a>
     </div>
