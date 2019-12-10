@@ -31,6 +31,11 @@ Route::get('/welcome', function () {
     return view('privateViews.welcome');
 });
 
+Route::get('/administradores', function () {
+    return view('privateViews.administrators');
+});
+
+
 /*Question CRUD routes */
 Route::get('/preguntas', 'QuestionController@index')->name('qList');
 
