@@ -13,10 +13,12 @@
 </head>
 <body>
     <!--Side menu-->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="viewAnimals.html">View animals</a>
-        <a href="upload.html">Upload a profile</a>
+    <div id="mySidenav" class="sidenav">        
+        <a href="viewAnimals.html">Administradores</a>
+        <a href="upload.html">Usuarios</a>
+        <a href="viewAnimals.html">Preguntas</a>
+        <a href="viewAnimals.html">Tiempos</a>
+        <a href="/login">Salir</a>
     </div>
 
     <section id="main">

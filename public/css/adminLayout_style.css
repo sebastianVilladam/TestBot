@@ -13,6 +13,10 @@ Grey:
     rgb(92, 92, 92)
 */
 
+*
+{
+    font-family: 'Mitr', sans-serif;
+}
 
 /* The side navigation menu style */
 .sidenav 
@@ -23,7 +27,7 @@ Grey:
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: #ffdbdb; 
+    background-color: #110dca; 
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
@@ -35,14 +39,14 @@ Grey:
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #5c5c5c;
+    color: black;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover 
 {
-    color: #ff9799;
+    color: #f8fe07;
 }
 
 /* Position and style the close button (top right corner) */
