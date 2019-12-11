@@ -64,7 +64,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        {!! Form::open(['method' => 'DELETE','route' => ['adminDelete', $professor->id]]) !!}
+        {!! Form::open(['method' => 'DELETE','route' => ['profDelete', $professor->id]]) !!}
         {!! Form::submit('Eliminar', ['class' => 'btn btn-danger mb-2', 'id' => 'btn-delete']) !!}
         {!! Form::close() !!}
       </div>

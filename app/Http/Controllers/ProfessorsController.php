@@ -96,7 +96,7 @@ class ProfessorsController extends Controller
         $professor = Professor::findOrFail($id);
         $professor->delete();
 
-        $professors = Administrator::all();
-        return view('privateViews.administrators', ['list' => $professors]);
+        $professors = Professor::all();
+        return view('privateViews.professors', ['list' => $professors]);
     }
 }
