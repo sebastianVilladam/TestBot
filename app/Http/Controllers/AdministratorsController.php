@@ -48,7 +48,8 @@ class AdministratorsController extends Controller
      */
     public function show($id)
     {
-        //
+        $admin = Administrator::findOrFail($id);
+        return view('privateViews.administrator', ['data' => $admin]);
     }
 
     /**
