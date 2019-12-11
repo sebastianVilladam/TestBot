@@ -19,8 +19,7 @@ class CreateSubjectsTable extends Migration
             $table->Integer('responce_time');
             $table->date('open_date');
             $table->date('close_date');
-            $table->unsignedBigInteger('professor_id');
-            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('professor_id');            
             $table->timestamps();
         });
     }
