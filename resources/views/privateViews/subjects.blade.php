@@ -37,7 +37,7 @@
             <tr>
                 <th scope="row">{{$subject->id}}</th>
                 <td>{{$subject->name}}</td>                
-                <td><a class="btn btn-primary btn1" href="">Ver</a></td>
+                <td><a class="btn btn-primary btn1" href="{{ route('subject', $subject->id) }}">Ver</a></td>
                 <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Eliminar</button></td>
             </tr>
         @empty

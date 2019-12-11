@@ -53,7 +53,7 @@ class SubjectsController extends Controller
     public function show($id)
     {
         $subject = Subject::findOrFail($id);
-        return view('privateViews.professor', ['data' => $subject]);
+        return view('privateViews.subject', ['data' => $subject]);
     }
 
     /**
