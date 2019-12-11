@@ -93,6 +93,10 @@ class AdministratorsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $admin = Administrator::findOrFail($id);
+        $admin->delete();
+
+        $admins = Administrator::all();
+        return view('privateViews.administrators', ['list' => $admins]);
     }
 }

@@ -62,3 +62,5 @@ Route::put('/datos de administrador/{id}', 'AdministratorsController@update')->n
 Route::get('/registrar administrador', 'AdministratorsController@create')->name('addAdminForm');
 
 Route::post('/registrar administrador', 'AdministratorsController@store')->name('addAdmin');
+
+Route::delete('/administrador/{id}', 'AdministratorsController@destroy')->name('adminDelete');
