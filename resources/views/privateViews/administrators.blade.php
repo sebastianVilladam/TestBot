@@ -26,40 +26,47 @@
     <table class="table table-borderless">
     <thead>
         <tr>
-        <th scope="col">#</th>
-        <th scope="col">Identificación</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Rol</th>
+        <th scope="col">#</th>        
+        <th scope="col">Nombre</th>        
         <th scope="col"></th>
         <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>123456789</td>
-            <td>Otto</td>
-            <td>Docente</td>
-            <td><button class="btn btn-primary">ver</button></td>
-            <td><button class="btn btn-danger">Eliminar</button></td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>4567897977</td>
-            <td>Thornton</td>
-            <td>Docente</td>
-            <td><button class="btn btn-primary">ver</button></td>
-            <td><button class="btn btn-danger">Eliminar</button></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>147258369</td>
-            <td>Alex</td>
-            <td>Administrador</td>
-            <td><button class="btn btn-primary">ver</button></td>
-            <td><button class="btn btn-danger">Eliminar</button></td>
-        </tr>
+        @forelse($list as $admin)
+            <tr>
+                <th scope="row">{{$admin->id}}</th>
+                <td>{{$admin->name}}</td>                
+                <td><a class="btn btn-primary btn1" href="">Ver</a></td>
+                <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Eliminar</button></td>
+            </tr>
+        @empty
+            <h3>No se encuentran administradores registrados en el sistema</h3>
+        @endforelse
     </tbody>
     </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar administrador del sistema</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>¿Está seguro de quere elminar éste administrador?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        {!! Form::open(['method' => 'DELETE','route' => ['qDelete', $admin->id]]) !!}
+        {!! Form::submit('Eliminar', ['class' => 'btn btn-danger mb-2', 'id' => 'btn-delete']) !!}
+        {!! Form::close() !!}
+      </div>
+    </div>
+  </div>
 </div>
 @stop

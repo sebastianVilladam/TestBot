@@ -31,10 +31,6 @@ Route::get('/welcome', function () {
     return view('privateViews.welcome');
 });
 
-Route::get('/administradores', function () {
-    return view('privateViews.administrators');
-});
-
 Route::get('/usuarios', function () {
     return view('privateViews.users');
 });
@@ -53,3 +49,6 @@ Route::get('/registrar pregunta', 'QuestionController@create')->name('addQForm')
 Route::post('/registrar pregunta', 'QuestionController@store')->name('addQ');
 
 Route::delete('/pregunta/{id}', 'QuestionController@destroy')->name('qDelete');
+
+/*Administrators CRUD routes */
+Route::get('/administradores', 'AdministratorsController@index')->name('adminList');
