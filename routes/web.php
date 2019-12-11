@@ -54,3 +54,7 @@ Route::delete('/pregunta/{id}', 'QuestionController@destroy')->name('qDelete');
 Route::get('/administradores', 'AdministratorsController@index')->name('adminList');
 
 Route::get('/administrador/{id}', 'AdministratorsController@show')->name('admin');
+
+Route::get('/datos de administrador/{id}', 'AdministratorsController@edit')->name('adminSettings');
+
+Route::put('/datos de administrador/{id}', 'AdministratorsController@update')->name('adminSettings');

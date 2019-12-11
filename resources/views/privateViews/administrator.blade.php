@@ -12,7 +12,7 @@
 <div id="btns">
     <div class="btn-group" role="group" aria-label="Basic example">
         <a href="/administradores" class="btn btn-primary">Atras</a>
-        <a href="" class="btn btn-warning">Modificar</a>    
+        <a href="{{ route('adminSettings', $data->id) }}" class="btn btn-warning">Modificar</a>    
     </div>
 </div>
 @stop

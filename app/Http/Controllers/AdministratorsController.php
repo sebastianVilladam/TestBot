@@ -60,7 +60,8 @@ class AdministratorsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $admin = Administrator::findOrFail($id);
+        return view('privateViews.adminSettings', ['data' => $admin]);
     }
 
     /**
@@ -72,7 +73,12 @@ class AdministratorsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
+        $admin = Administrator::findOrFail($id);
+        $input = $request->all();
+        $admin->fill($input)->save();
+        
+        return view('privateViews.administrator', ['data' => $admin]);
     }
 
     /**
