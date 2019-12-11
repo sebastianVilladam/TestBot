@@ -64,3 +64,18 @@ Route::get('/registrar administrador', 'AdministratorsController@create')->name(
 Route::post('/registrar administrador', 'AdministratorsController@store')->name('addAdmin');
 
 Route::delete('/administrador/{id}', 'AdministratorsController@destroy')->name('adminDelete');
+
+/*Professors CRUD routes */
+Route::get('/docentes', 'ProfessorsController@index')->name('profList');
+
+Route::get('/docente/{id}', 'ProfessorsController@show')->name('prof');
+
+Route::get('/datos de docente/{id}', 'ProfessorsController@edit')->name('profSettings');
+
+Route::put('/datos de docente/{id}', 'ProfessorsController@update')->name('profSettings');
+
+Route::get('/registrar docente', 'ProfessorsController@create')->name('addProfForm');
+
+Route::post('/registrar docente', 'ProfessorsController@store')->name('addProg');
+
+Route::delete('/docente/{id}', 'ProfessorsController@destroy')->name('profDelete');
