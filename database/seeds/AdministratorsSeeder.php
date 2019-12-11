@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-use App\Adminsitrator;
+use App\Administrator;
 
 class AdministratorsSeeder extends Seeder
 {
