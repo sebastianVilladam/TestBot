@@ -65,7 +65,7 @@ class SubjectsController extends Controller
     public function edit($id)
     {
         $subject = Subject::findOrFail($id);
-        return view('privateViews.professorSettings', ['data' => $subject]);
+        return view('privateViews.subjectSettings', ['data' => $subject]);
     }
 
     /**
@@ -82,7 +82,7 @@ class SubjectsController extends Controller
         $input = $request->all();
         $subject->fill($input)->save();
         
-        return view('privateViews.professor', ['data' => $subject]);
+        return view('privateViews.subject', ['data' => $subject]);
     }
 
     /**
