@@ -7,6 +7,7 @@
     <h3>ID: {{ $data->id }}</h3>
     <h3>Nombre: {{ $data->name }}</h3>
     <h3>Código: {{ $data->code }}</h3>
+    <h3>Correo: {{ $data->email }}</h3>
     <hr>    
 </div>
 

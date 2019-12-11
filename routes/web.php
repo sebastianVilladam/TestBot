@@ -76,6 +76,6 @@ Route::put('/datos de docente/{id}', 'ProfessorsController@update')->name('profS
 
 Route::get('/registrar docente', 'ProfessorsController@create')->name('addProfForm');
 
-Route::post('/registrar docente', 'ProfessorsController@store')->name('addProg');
+Route::post('/registrar docente', 'ProfessorsController@store')->name('addProf');
 
 Route::delete('/docente/{id}', 'ProfessorsController@destroy')->name('profDelete');

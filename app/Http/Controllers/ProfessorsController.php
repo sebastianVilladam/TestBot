@@ -26,7 +26,7 @@ class ProfessorsController extends Controller
      */
     public function create()
     {
-        return view('privateViews.adminRegister');
+        return view('privateViews.professorRegister');
     }
 
     /**
@@ -38,10 +38,10 @@ class ProfessorsController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        Administrator::create($input);
+        Professor::create($input);
 
-        $admins = Administrator::all();
-        return view('privateViews.administrators', ['list' => $admins]);
+        $professors = professor::all();
+        return view('privateViews.professors', ['list' => $professors]);
     }
 
     /**
