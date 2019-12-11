@@ -26,7 +26,7 @@ class AdministratorsController extends Controller
      */
     public function create()
     {
-        //
+        return view('privateViews.adminRegister');
     }
 
     /**
@@ -37,7 +37,11 @@ class AdministratorsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Administrator::create($input);
+
+        $admins = Administrator::all();
+        return view('privateViews.administrators', ['list' => $admins]);
     }
 
     /**
