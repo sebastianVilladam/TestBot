@@ -39,7 +39,7 @@
                 <th scope="row">{{$professor->id}}</th>
                 <td>{{$professor->name}}</td>                
                 <td>{{$professor->code}}</td>                
-                <td><a class="btn btn-primary btn1" href="">Ver</a></td>
+                <td><a class="btn btn-primary btn1" href="{{ route('prof', $professor->id) }}">Ver</a></td>
                 <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Eliminar</button></td>
             </tr>
         @empty

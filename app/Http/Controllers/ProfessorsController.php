@@ -52,8 +52,8 @@ class ProfessorsController extends Controller
      */
     public function show($id)
     {
-        $admin = Administrator::findOrFail($id);
-        return view('privateViews.administrator', ['data' => $admin]);
+        $professor = Professor::findOrFail($id);
+        return view('privateViews.professor', ['data' => $professor]);
     }
 
     /**
@@ -64,8 +64,8 @@ class ProfessorsController extends Controller
      */
     public function edit($id)
     {
-        $admin = Administrator::findOrFail($id);
-        return view('privateViews.adminSettings', ['data' => $admin]);
+        $professor = Professor::findOrFail($id);
+        return view('privateViews.adminSettings', ['data' => $professor]);
     }
 
     /**
@@ -78,11 +78,11 @@ class ProfessorsController extends Controller
     public function update(Request $request, $id)
     {
         
-        $admin = Administrator::findOrFail($id);
+        $professor = Professor::findOrFail($id);
         $input = $request->all();
-        $admin->fill($input)->save();
+        $professor->fill($input)->save();
         
-        return view('privateViews.administrator', ['data' => $admin]);
+        return view('privateViews.administrator', ['data' => $professor]);
     }
 
     /**
@@ -93,10 +93,10 @@ class ProfessorsController extends Controller
      */
     public function destroy($id)
     {
-        $admin = Administrator::findOrFail($id);
-        $admin->delete();
+        $professor = Professor::findOrFail($id);
+        $professor->delete();
 
-        $admins = Administrator::all();
-        return view('privateViews.administrators', ['list' => $admins]);
+        $professors = Administrator::all();
+        return view('privateViews.administrators', ['list' => $professors]);
     }
 }
