@@ -17,7 +17,7 @@ class CreateAdministratorsTable extends Migration
             $table->bigIncrements('id');
             $table->String('name');
             $table->String('password');
-            $table->Integer('rol_id');
+            $table->Integer('rol_id')->default(3);
             $table->timestamps();
         });
     }

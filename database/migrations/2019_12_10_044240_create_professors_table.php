@@ -19,7 +19,7 @@ class CreateProfessorsTable extends Migration
             $table->String('password');
             $table->String('code');
             $table->String('email');
-            $table->Integer('rol_id');
+            $table->Integer('rol_id')->default(2);
             $table->timestamps();
         });
     }
