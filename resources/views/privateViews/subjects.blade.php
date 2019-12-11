@@ -7,7 +7,7 @@
 <!--Filter section-->
 <div id="filter-section">
     <div class="row" id="filter-content">
-        <div class="col-md-4"><a href="/registrar administrador" class="btn btn-primary">Regsitrar asignatura</a></div>
+        <div class="col-md-4"><a href="/registrar asignatura" class="btn btn-primary">Regsitrar asignatura</a></div>
         <div class="col-md-4">
             <form class="form form-inline">             
                 <div class="form-group mx-sm-3 mb-2">

@@ -26,7 +26,7 @@ class SubjectsController extends Controller
      */
     public function create()
     {
-        return view('privateViews.professorRegister');
+        return view('privateViews.subjectRegister');
     }
 
     /**
@@ -40,8 +40,8 @@ class SubjectsController extends Controller
         $input = $request->all();
         Subject::create($input);
 
-        $subjects = professor::all();
-        return view('privateViews.professors', ['list' => $subjects]);
+        $subjects = Subject::all();
+        return view('privateViews.subjects', ['list' => $subjects]);
     }
 
     /**
