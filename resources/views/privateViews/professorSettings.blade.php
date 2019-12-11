@@ -11,12 +11,16 @@
     {!! Form::text('name', null, ['class' => 'form-control' , 'placeholder' => '$data->name']) !!}
   </div>
   <div class="form-group">
+    {!! Form::label('password', 'CONTRASEÑA:', ['class' => 'control-label']) !!}
+    {!! Form::text('password', null, ['class' => 'form-control' , 'placeholder' => '$data->password']) !!}
+  </div>
+  <div class="form-group">
     {!! Form::label('code', 'CÓDIGO:', ['class' => 'control-label']) !!}
     {!! Form::text('code', null, ['class' => 'form-control' , 'placeholder' => '$data->code']) !!}
   </div>
   <div class="form-group">
-    {!! Form::label('password', 'CONTRASEÑA:', ['class' => 'control-label']) !!}
-    {!! Form::text('password', null, ['class' => 'form-control' , 'placeholder' => '$data->password']) !!}
+    {!! Form::label('email', 'CORREO:', ['class' => 'control-label']) !!}
+    {!! Form::text('email', null, ['class' => 'form-control' , 'placeholder' => '$data->email']) !!}
   </div>
   <div class="text-center">
     <button type="submit" class="btn btn-primary" id="btn-save">Guardar cambios</button>
