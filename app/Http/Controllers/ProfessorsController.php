@@ -65,7 +65,7 @@ class ProfessorsController extends Controller
     public function edit($id)
     {
         $professor = Professor::findOrFail($id);
-        return view('privateViews.adminSettings', ['data' => $professor]);
+        return view('privateViews.professorSettings', ['data' => $professor]);
     }
 
     /**
@@ -82,7 +82,7 @@ class ProfessorsController extends Controller
         $input = $request->all();
         $professor->fill($input)->save();
         
-        return view('privateViews.administrator', ['data' => $professor]);
+        return view('privateViews.professor', ['data' => $professor]);
     }
 
     /**
