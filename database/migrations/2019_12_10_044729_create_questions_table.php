@@ -22,6 +22,7 @@ class CreateQuestionsTable extends Migration
             $table->String('option_d')->nullable();            
             $table->String('correct');
             $table->unsignedBigInteger('subject_id');
+            $table->unsignedBigInteger('category_id');
             $table->timestamps();
         });
     }

@@ -20,7 +20,8 @@ class QuestionsSeeder extends Seeder
             'option_c' => 'opcion de pregunta c',
             'option_d' => 'opcion de pregunta d',
             'correct' => 'c',
-            'subject_id' => '1'
+            'subject_id' => '1',
+            'category_id' => '1'
         ]);
 
         Question::create([
@@ -30,7 +31,8 @@ class QuestionsSeeder extends Seeder
             'option_c' => 'opcion de pregunta 2 c',
             'option_d' => 'opcion de pregunta 2 d',
             'correct' => 'a',
-            'subject_id' => '1'
+            'subject_id' => '1',
+            'category_id' => '1'
         ]);
 
         Question::create([
@@ -40,7 +42,8 @@ class QuestionsSeeder extends Seeder
             'option_c' => 'opcion de pregunta 3 c',
             'option_d' => 'opcion de pregunta 3 d',
             'correct' => 'b',
-            'subject_id' => '2'
+            'subject_id' => '2',
+            'category_id' => '1'
         ]);
 
         Question::create([
@@ -50,7 +53,8 @@ class QuestionsSeeder extends Seeder
             'option_c' => 'opcion de pregunta c',
             'option_d' => 'opcion de pregunta d',
             'correct' => 'c',
-            'subject_id' => '1'
+            'subject_id' => '1',
+            'category_id' => '2'
         ]);
 
         Question::create([
@@ -60,7 +64,8 @@ class QuestionsSeeder extends Seeder
             'option_c' => 'opcion de pregunta 2 c',
             'option_d' => 'opcion de pregunta 2 d',
             'correct' => 'd',
-            'subject_id' => '3'
+            'subject_id' => '3',
+            'category_id' => '3'
         ]);
     }
 }
