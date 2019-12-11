@@ -97,6 +97,6 @@ class SubjectsController extends Controller
         $subject->delete();
 
         $subjects = Subject::all();
-        return view('privateViews.professors', ['list' => $subjects]);
+        return view('privateViews.subjects', ['list' => $subjects]);
     }
 }

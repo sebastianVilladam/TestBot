@@ -52,17 +52,17 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Eliminar administrador del sistema</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar asignatura del sistema</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>¿Está seguro de quere elminar éste administrador?</p>
+        <p>¿Está seguro de quere elminar ésta asignatura?</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        {!! Form::open(['method' => 'DELETE','route' => ['adminDelete', $subject->id]]) !!}
+        {!! Form::open(['method' => 'DELETE','route' => ['subjectDelete', $subject->id]]) !!}
         {!! Form::submit('Eliminar', ['class' => 'btn btn-danger mb-2', 'id' => 'btn-delete']) !!}
         {!! Form::close() !!}
       </div>
