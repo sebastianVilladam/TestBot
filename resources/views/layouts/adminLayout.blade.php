@@ -15,6 +15,7 @@
     <!--Side menu-->
     <div id="mySidenav" class="sidenav">        
         <a href="/administradores">Administradores</a>
+        <a href="/docentes">Docentes</a>
         <a href="/usuarios">Usuarios</a>
         <a href="/preguntas">Preguntas</a>
         <a href="viewAnimals.html">Tiempos</a>
