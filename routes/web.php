@@ -81,7 +81,7 @@ Route::post('/registrar docente', 'ProfessorsController@store')->name('addProf')
 Route::delete('/docente/{id}', 'ProfessorsController@destroy')->name('profDelete');
 
 /*Subjects CRUD routes */
-Route::get('/asignatura', 'SubjectsController@index')->name('subjectsList');
+Route::get('/asignaturas', 'SubjectsController@index')->name('subjectsList');
 
 Route::get('/asignatura/{id}', 'SubjectsController@show')->name('subject');
 

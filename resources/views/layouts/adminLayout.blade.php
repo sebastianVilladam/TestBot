@@ -18,7 +18,7 @@
         <a href="/docentes">Docentes</a>
         <a href="/usuarios">Usuarios</a>
         <a href="/preguntas">Preguntas</a>
-        <a href="viewAnimals.html">Tiempos</a>
+        <a href="/asignaturas">Asignaturas</a>
         <a href="/login">Salir</a>
     </div>
 

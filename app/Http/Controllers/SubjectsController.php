@@ -16,7 +16,7 @@ class SubjectsController extends Controller
     public function index()
     {
         $subjects = Subject::all();
-        return view('privateViews.professors', ['list' => $subjects]);
+        return view('privateViews.subjects', ['list' => $subjects]);
     }
 
     /**
