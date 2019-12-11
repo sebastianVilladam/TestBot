@@ -79,3 +79,18 @@ Route::get('/registrar docente', 'ProfessorsController@create')->name('addProfFo
 Route::post('/registrar docente', 'ProfessorsController@store')->name('addProf');
 
 Route::delete('/docente/{id}', 'ProfessorsController@destroy')->name('profDelete');
+
+/*Subjects CRUD routes */
+Route::get('/asignatura', 'SubjectsController@index')->name('subjectsList');
+
+Route::get('/asignatura/{id}', 'SubjectsController@show')->name('subject');
+
+Route::get('/datos de asignatura/{id}', 'SubjectsController@edit')->name('subjectSettings');
+
+Route::put('/datos de asignatura/{id}', 'SubjectsController@update')->name('subjectSettings');
+
+Route::get('/registrar asignatura', 'SubjectsController@create')->name('addSubjectForm');
+
+Route::post('/registrar asignatura', 'SubjectsController@store')->name('addSubject');
+
+Route::delete('/asignatura/{id}', 'SubjectsController@destroy')->name('subjectDelete');
