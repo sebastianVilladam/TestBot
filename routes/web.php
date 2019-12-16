@@ -94,3 +94,5 @@ Route::get('/registrar asignatura', 'EventsController@create')->name('addSubject
 Route::post('/registrar asignatura', 'EventsController@store')->name('addSubject');
 
 Route::delete('/asignatura/{id}', 'EventsController@destroy')->name('subjectDelete');
+
+Route::get('/seleccion', 'SelectedController@index')->name('selectList');

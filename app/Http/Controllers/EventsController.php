@@ -40,8 +40,9 @@ class EventsController extends Controller
         $input = $request->all();
         Event::create($input);
 
-        $events = Event::all();
-        return view('privateViews.subjects', ['list' => $events]);
+        //$events = Event::all();
+        //return view('privateViews.questionSelect');
+        return redirect()->route('selectList');
     }
 
     /**
