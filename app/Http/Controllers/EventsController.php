@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Subject;
+use App\Event;
 
-class SubjectsController extends Controller
+class EventsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class SubjectsController extends Controller
      */
     public function index()
     {
-        $subjects = Subject::all();
-        return view('privateViews.subjects', ['list' => $subjects]);
+        $events = Subject::all();
+        return view('privateViews.subjects', ['list' => $events]);
     }
 
     /**
@@ -38,10 +38,10 @@ class SubjectsController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        Subject::create($input);
+        Event::create($input);
 
-        $subjects = Subject::all();
-        return view('privateViews.subjects', ['list' => $subjects]);
+        $events = Event::all();
+        return view('privateViews.subjects', ['list' => $events]);
     }
 
     /**
@@ -52,8 +52,8 @@ class SubjectsController extends Controller
      */
     public function show($id)
     {
-        $subject = Subject::findOrFail($id);
-        return view('privateViews.subject', ['data' => $subject]);
+        $event = Event::findOrFail($id);
+        return view('privateViews.subject', ['data' => $event]);
     }
 
     /**
@@ -64,8 +64,8 @@ class SubjectsController extends Controller
      */
     public function edit($id)
     {
-        $subject = Subject::findOrFail($id);
-        return view('privateViews.subjectSettings', ['data' => $subject]);
+        $event = Event::findOrFail($id);
+        return view('privateViews.subjectSettings', ['data' => $event]);
     }
 
     /**
@@ -78,11 +78,11 @@ class SubjectsController extends Controller
     public function update(Request $request, $id)
     {
         
-        $subject = Subject::findOrFail($id);
+        $event = Event::findOrFail($id);
         $input = $request->all();
-        $subject->fill($input)->save();
+        $event->fill($input)->save();
         
-        return view('privateViews.subject', ['data' => $subject]);
+        return view('privateViews.subject', ['data' => $event]);
     }
 
     /**
@@ -93,10 +93,10 @@ class SubjectsController extends Controller
      */
     public function destroy($id)
     {
-        $subject = Subject::findOrFail($id);
-        $subject->delete();
+        $event = Event::findOrFail($id);
+        $event->delete();
 
-        $subjects = Subject::all();
-        return view('privateViews.subjects', ['list' => $subjects]);
+        $events = Event::all();
+        return view('privateViews.subjects', ['list' => $events]);
     }
 }

@@ -81,16 +81,16 @@ Route::post('/registrar docente', 'ProfessorsController@store')->name('addProf')
 Route::delete('/docente/{id}', 'ProfessorsController@destroy')->name('profDelete');
 
 /*Subjects CRUD routes */
-Route::get('/asignaturas', 'SubjectsController@index')->name('subjectsList');
+Route::get('/asignaturas', 'EventsController@index')->name('subjectsList');
 
-Route::get('/asignatura/{id}', 'SubjectsController@show')->name('subject');
+Route::get('/asignatura/{id}', 'EventsController@show')->name('subject');
 
-Route::get('/datos de asignatura/{id}', 'SubjectsController@edit')->name('subjectSettings');
+Route::get('/datos de asignatura/{id}', 'EventsController@edit')->name('subjectSettings');
 
-Route::put('/datos de asignatura/{id}', 'SubjectsController@update')->name('subjectSettings');
+Route::put('/datos de asignatura/{id}', 'EventsController@update')->name('subjectSettings');
 
-Route::get('/registrar asignatura', 'SubjectsController@create')->name('addSubjectForm');
+Route::get('/registrar asignatura', 'EventsController@create')->name('addSubjectForm');
 
-Route::post('/registrar asignatura', 'SubjectsController@store')->name('addSubject');
+Route::post('/registrar asignatura', 'EventsController@store')->name('addSubject');
 
-Route::delete('/asignatura/{id}', 'SubjectsController@destroy')->name('subjectDelete');
+Route::delete('/asignatura/{id}', 'EventsController@destroy')->name('subjectDelete');

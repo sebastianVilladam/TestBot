@@ -18,7 +18,7 @@ class SubjectsSeeder extends Seeder
             'responce_time' => '300',
             'open_date' => '20/10/2019',
             'close_date' => '21/10/2019',
-            'professor_id' => '2'
+            'admin_id' => '2'
         ]);
 
         Subject::create([
@@ -26,7 +26,7 @@ class SubjectsSeeder extends Seeder
             'responce_time' => '600',
             'open_date' => '5/09/2019',
             'close_date' => '6/09/2019',
-            'professor_id' => '1'
+            'admin_id' => '1'
         ]);
 
         Subject::create([
@@ -34,7 +34,7 @@ class SubjectsSeeder extends Seeder
             'responce_time' => '300',
             'open_date' => '15/10/2019',
             'close_date' => '20/10/2019',
-            'professor_id' => '5'
+            'admin_id' => '5'
         ]);
     }
 }
