@@ -2,9 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
-use App\Subject;
+use App\Event;
 
-class SubjectsSeeder extends Seeder
+class EventsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,7 +13,7 @@ class SubjectsSeeder extends Seeder
      */
     public function run()
     {
-        Subject::create([
+        Event::create([
             'name' => 'Matematicas basicas',
             'responce_time' => '300',
             'open_date' => '20/10/2019',
@@ -21,7 +21,7 @@ class SubjectsSeeder extends Seeder
             'admin_id' => '2'
         ]);
 
-        Subject::create([
+        Event::create([
             'name' => 'Logica de programacion',
             'responce_time' => '600',
             'open_date' => '5/09/2019',
@@ -29,7 +29,7 @@ class SubjectsSeeder extends Seeder
             'admin_id' => '1'
         ]);
 
-        Subject::create([
+        Event::create([
             'name' => 'Ingenieria de software',
             'responce_time' => '300',
             'open_date' => '15/10/2019',
