@@ -21,10 +21,10 @@
   <div class="form-group">
     {!! Form::label('option_c', 'C:', ['class' => 'control-label']) !!}
     {!! Form::text('option_c', null, ['class' => 'form-control' , 'placeholder' => '$data->option_c']) !!}
-  </div>
+  </div>  
   <div class="form-group">
     {!! Form::label('correct', 'CORRECTA:', ['class' => 'control-label']) !!}
-    {!! Form::text('correct', null, ['class' => 'form-control' , 'placeholder' => '$data->correct']) !!}
+    {!! Form::select('correct',['a' => 'Opcion a','b'=>'Opcion b','c'=>'Opcion c','d'=>'Opcion d'], null, ['class'=>'form-control','placeholder'=>'Respuesta correcta']) !!}
   </div>
   <div class="text-center">
     <button type="submit" class="btn btn-primary" id="btn-save">Guardar cambios</button>

@@ -27,12 +27,16 @@
       {!! Form::text('option_d', null, ['class' => 'form-control']) !!}
     </div>
     <div class="form-group">
-      {!! Form::label('correct', 'OPCION CORRECTA:', ['class' => 'control-label']) !!}
-      {!! Form::text('correct', null, ['class' => 'form-control']) !!}
+      {!! Form::label('correct', 'CORRECTA:', ['class' => 'control-label']) !!}
+      {!! Form::select('correct',['a' => 'Opcion a','b'=>'Opcion b','c'=>'Opcion c','d'=>'Opcion d'], null, ['class'=>'form-control','placeholder'=>'Respuesta correcta']) !!}
     </div>
     <div class="form-group">
-      {!! Form::label('subject_id', 'ASIGNATURA:', ['class' => 'control-label']) !!}
-      {!! Form::text('subject_id', null, ['class' => 'form-control']) !!}
+      {!! Form::label('professor_id', 'DOCENTE:', ['class' => 'control-label']) !!}
+      {!! Form::text('professor_id', null, ['class' => 'form-control']) !!}
+    </div>
+    <div class="form-group">
+      {!! Form::label('category_id', 'CATEGORIA:', ['class' => 'control-label']) !!}
+      {!! Form::select('category_id',['1' => 'Ingenieria de Sistemas','2'=>'Odontologia','3'=>'Culinaria','4'=>'Ingenieria Biomedica'], null, ['class'=>'form-control','placeholder'=>'Categoria']) !!}
     </div>
     <button type="submit" class="btn btn-primary" id="btn-save">Añadir</button>
     <a href="/preguntas" class="btn btn-danger">Cancelar</a>

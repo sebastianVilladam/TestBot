@@ -5,7 +5,8 @@
 @section('content')
 <div class="container-fluid" id="info">
     <h3>ID: {{ $data->id }}</h3>
-    <h3>Asignatura: {{ $data->subject_id }}</h3>
+    <h3>Categoría: {{ $data->category_id }}</h3>
+    <h3>Docente: {{ $data->professor_id }}</h3>
     <hr>
     <h2>Información principal de la pregunta:</h2>
     <p id="body">{{ $data->body }}</p>
