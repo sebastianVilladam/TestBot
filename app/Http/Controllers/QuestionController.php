@@ -62,6 +62,12 @@ class QuestionController extends Controller
         return view('privateViews.question', ['data' => $question]);
     }
 
+    public function showP($id)
+    {
+        $question = Question::findOrFail($id);
+        return view('professorsViews.question', ['data' => $question]);
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -72,6 +78,12 @@ class QuestionController extends Controller
     {
         $question = Question::findOrFail($id);
         return view('privateViews.questionSettings', ['data' => $question]);
+    }
+
+    public function editP($id)
+    {
+        $question = Question::findOrFail($id);
+        return view('professorsViews.questionSettings', ['data' => $question]);
     }
 
     /**
@@ -90,6 +102,15 @@ class QuestionController extends Controller
         return view('privateViews.question', ['data' => $question]);
     }
 
+    public function updateP(Request $request, $id)
+    {
+        $question = Question::findOrFail($id);
+        $input = $request->all();
+        $question->fill($input)->save();
+        
+        return view('professorsViews.question', ['data' => $question]);
+    }
+
     /**
      * Remove the specified resource from storage.
      *
@@ -103,5 +124,14 @@ class QuestionController extends Controller
 
         $questions = Question::all();
         return view('privateViews.questions', ['list' => $questions]);
+    }
+
+    public function destroyP($id)
+    {
+        $question = Question::findOrFail($id);
+        $question->delete();
+
+        $questions = Question::all();
+        return view('professorsViews.questions', ['list' => $questions]);
     }
 }
