@@ -47,7 +47,7 @@ class QuestionController extends Controller
         Question::create($input);
 
         $questions = Question::all();
-        return view('privateViews.questions', ['list' => $questions]);
+        return view('professorsViews.questions', ['list' => $questions]);
     }
 
     /**

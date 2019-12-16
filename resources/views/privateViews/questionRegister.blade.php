@@ -1,4 +1,4 @@
-@extends('layouts.adminLayout')
+@extends('layouts.professorsLayout')
 @section('links')
 @stop
 @section('content')
@@ -39,7 +39,7 @@
       {!! Form::select('category_id',['1' => 'Ingenieria de Sistemas','2'=>'Odontologia','3'=>'Culinaria','4'=>'Ingenieria Biomedica'], null, ['class'=>'form-control','placeholder'=>'Categoria']) !!}
     </div>
     <button type="submit" class="btn btn-primary" id="btn-save">Añadir</button>
-    <a href="/preguntas" class="btn btn-danger">Cancelar</a>
+    <a href="/preguntas docente" class="btn btn-danger">Cancelar</a>
   {!! Form::close() !!}
 </div>
 @stop
