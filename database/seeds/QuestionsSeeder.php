@@ -20,7 +20,7 @@ class QuestionsSeeder extends Seeder
             'option_c' => 'opcion de pregunta c',
             'option_d' => 'opcion de pregunta d',
             'correct' => 'c',
-            'subject_id' => '1',
+            'professor_id' => '1',
             'category_id' => '1'
         ]);
 
@@ -31,7 +31,7 @@ class QuestionsSeeder extends Seeder
             'option_c' => 'opcion de pregunta 2 c',
             'option_d' => 'opcion de pregunta 2 d',
             'correct' => 'a',
-            'subject_id' => '1',
+            'professor_id' => '1',
             'category_id' => '1'
         ]);
 
@@ -42,7 +42,7 @@ class QuestionsSeeder extends Seeder
             'option_c' => 'opcion de pregunta 3 c',
             'option_d' => 'opcion de pregunta 3 d',
             'correct' => 'b',
-            'subject_id' => '2',
+            'professor_id' => '2',
             'category_id' => '1'
         ]);
 
@@ -53,7 +53,7 @@ class QuestionsSeeder extends Seeder
             'option_c' => 'opcion de pregunta c',
             'option_d' => 'opcion de pregunta d',
             'correct' => 'c',
-            'subject_id' => '1',
+            'professor_id' => '1',
             'category_id' => '2'
         ]);
 
@@ -64,7 +64,7 @@ class QuestionsSeeder extends Seeder
             'option_c' => 'opcion de pregunta 2 c',
             'option_d' => 'opcion de pregunta 2 d',
             'correct' => 'd',
-            'subject_id' => '3',
+            'professor_id' => '3',
             'category_id' => '3'
         ]);
     }
