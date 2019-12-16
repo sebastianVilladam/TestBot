@@ -46,15 +46,23 @@ Route::get('/preguntas docente', 'QuestionController@indexP')->name('PqList');
 
 Route::get('/pregunta/{id}', 'QuestionController@show')->name('question');
 
+Route::get('/mi pregunta/{id}', 'QuestionController@showP')->name('Pquestion');
+
 Route::get('/datos de pregunta/{id}', 'QuestionController@edit')->name('qSettings');
 
+Route::get('/datos de mi pregunta/{id}', 'QuestionController@editP')->name('PqSettings');
+
 Route::put('/datos de pregunta/{id}', 'QuestionController@update')->name('qSettings');
+
+Route::put('/datos de mi pregunta/{id}', 'QuestionController@updateP')->name('PqSettings');
 
 Route::get('/registrar pregunta', 'QuestionController@create')->name('addQForm');
 
 Route::post('/registrar pregunta', 'QuestionController@store')->name('addQ');
 
 Route::delete('/pregunta/{id}', 'QuestionController@destroy')->name('qDelete');
+
+Route::delete('/mi pregunta/{id}', 'QuestionController@destroyP')->name('PqDelete');
 
 /*Administrators CRUD routes */
 Route::get('/administradores', 'AdministratorsController@index')->name('adminList');

@@ -48,7 +48,7 @@
                     <th scope="row">{{$question->id}}</th>
                     <td>{{$question->body}}</td>
                     <td>{{$question->subject_id}}</td>
-                    <td><a class="btn btn-primary btn1" href="{{ route('question', $question->id) }}">Ver</a></td>
+                    <td><a class="btn btn-primary btn1" href="{{ route('Pquestion', $question->id) }}">Ver</a></td>
                     <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Eliminar</button></td>
                 </tr>
             @empty
@@ -73,7 +73,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        {!! Form::open(['method' => 'DELETE','route' => ['qDelete', $question->id]]) !!}
+        {!! Form::open(['method' => 'DELETE','route' => ['PqDelete', $question->id]]) !!}
         {!! Form::submit('Eliminar', ['class' => 'btn btn-danger mb-2', 'id' => 'btn-delete']) !!}
         {!! Form::close() !!}
       </div>
