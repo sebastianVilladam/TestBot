@@ -9,7 +9,7 @@
     <h3>Tiempo de respuesta (sg): {{ $data->responce_time }}</h3>
     <h3>Fecha de apertura: {{ $data->open_date }}</h3>
     <h3>Fecha de cierre: {{ $data->close_date }}</h3>
-    <h3>Id del docente: {{ $data->professor_id }}</h3>
+    <h3>Id del administrador: {{ $data->admin_id }}</h3>
     <hr>    
 </div>
 

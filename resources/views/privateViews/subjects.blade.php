@@ -2,17 +2,17 @@
 @section('links')
 @stop
 @section('content')
-<h1>Asignaturas registradas</h1>
+<h1>Eventos registrados</h1>
 
 <!--Filter section-->
 <div id="filter-section">
     <div class="row" id="filter-content">
-        <div class="col-md-4"><a href="/registrar asignatura" class="btn btn-primary">Regsitrar asignatura</a></div>
+        <div class="col-md-4"><a href="/registrar asignatura" class="btn btn-primary">Crear evento</a></div>
         <div class="col-md-4">
             <form class="form form-inline">             
                 <div class="form-group mx-sm-3 mb-2">
-                    <label for="Username" class="sr-only">Nombre de asignatura</label>
-                    <input type="text" class="form-control" id="inputPassword2" placeholder="Asignatura">
+                    <label for="Username" class="sr-only">Nombre del evento</label>
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="evento">
                 </div>
                 <button type="submit" class="btn btn-primary mb-2">Filtrar</button>
             </form>
@@ -52,13 +52,13 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Eliminar asignatura del sistema</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar evento del sistema</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>¿Está seguro de quere elminar ésta asignatura?</p>
+        <p>¿Está seguro de querer elminar éste evento?</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

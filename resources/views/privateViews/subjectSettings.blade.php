@@ -2,7 +2,7 @@
 @section('links')
 @stop
 @section('content')
-<h1>DATOS DE LA ASIGNATURA</h1>
+<h1>DATOS DEL EVENTO</h1>
 <hr>
 <div class="container-fluid center" id="form-container">
   {!! Form::model($data, ['method' => 'PUT','route' => ['subjectSettings', $data->id]]) !!}
@@ -23,8 +23,8 @@
     {!! Form::text('close_date', null, ['class' => 'form-control' , 'placeholder' => '$data->close_date']) !!}
   </div>
   <div class="form-group">
-    {!! Form::label('professor_id', 'ID DEL DOCENTE:', ['class' => 'control-label']) !!}
-    {!! Form::text('professor_id', null, ['class' => 'form-control' , 'placeholder' => '$data->professor_id']) !!}
+    {!! Form::label('admin_id', 'ID DEL ADMINISTRADOR:', ['class' => 'control-label']) !!}
+    {!! Form::text('admin_id', null, ['class' => 'form-control' , 'placeholder' => '$data->admin_id']) !!}
   </div>
   <div class="text-center">
     <button type="submit" class="btn btn-primary" id="btn-save">Guardar cambios</button>

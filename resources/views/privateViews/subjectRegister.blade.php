@@ -2,7 +2,7 @@
 @section('links')
 @stop
 @section('content')
-<h1>REGISTRAR NUEVA ASIGNATURA</h1>
+<h1>CREAR NUEVO EVENTO</h1>
 <hr>
 <div class="container-fluid center" id="form-container">
   {!! Form::open(['route' => 'addSubject']) !!}
@@ -23,9 +23,9 @@
       {!! Form::text('close_date', null, ['class' => 'form-control']) !!}
     </div>
     <div class="form-group">
-      {!! Form::label('professor_id', 'ID DEL DOCENTE:', ['class' => 'control-label']) !!}
-      {!! Form::text('professor_id', null, ['class' => 'form-control']) !!}
-    </div>
+      {!! Form::label('admin_id', 'ID DEL ADMINISTRADOR:', ['class' => 'control-label']) !!}
+      {!! Form::text('admin_id', null, ['class' => 'form-control']) !!}
+    </div>    
     <button type="submit" class="btn btn-primary" id="btn-save">Añadir</button>
     <a href="/asignaturas" class="btn btn-danger">Cancelar</a>
   {!! Form::close() !!}
