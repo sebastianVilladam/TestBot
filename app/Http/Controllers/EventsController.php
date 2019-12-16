@@ -15,7 +15,7 @@ class EventsController extends Controller
      */
     public function index()
     {
-        $events = Subject::all();
+        $events = Event::all();
         return view('privateViews.subjects', ['list' => $events]);
     }
 
