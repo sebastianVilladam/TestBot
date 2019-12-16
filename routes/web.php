@@ -31,12 +31,18 @@ Route::get('/welcome', function () {
     return view('privateViews.welcome');
 });
 
+Route::get('/welcome professors', function () {
+    return view('professorsViews.welcome');
+});
+
 Route::get('/usuarios', function () {
     return view('privateViews.users');
 });
 
 /*Question CRUD routes */
 Route::get('/preguntas', 'QuestionController@index')->name('qList');
+
+Route::get('/preguntas docente', 'QuestionController@indexP')->name('PqList');
 
 Route::get('/pregunta/{id}', 'QuestionController@show')->name('question');
 

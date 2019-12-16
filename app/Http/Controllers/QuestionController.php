@@ -19,6 +19,12 @@ class QuestionController extends Controller
         return view('privateViews.questions', ['list' => $questions]);
     }
 
+    public function indexP()
+    {
+        $questions = Question::all();
+        return view('professorsViews.questions', ['list' => $questions]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

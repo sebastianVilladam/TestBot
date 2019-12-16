@@ -1,13 +1,14 @@
-@extends('layouts.adminLayout')
+@extends('layouts.professorsLayout')
 @section('links')
 @stop
 @section('content')
-<h1>Preguntas registradas</h1>
+<h1>Mis preguntas registradas</h1>
 
 <!--Filter section-->
 <div id="filter-section">
     <div class="row" id="filter-content">
-        <div class="col-md-4">            
+        <div class="col-md-4">
+            <a href="/registrar pregunta" class="btn btn-primary">Regsitrar pregunta</a>
         </div>
         <div class="col-md-4">
             <form class="form">             
